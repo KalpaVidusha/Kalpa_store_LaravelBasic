@@ -82,5 +82,5 @@ Visit → [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ## 📹 Demo Video
 
-[▶️ Click here to watch the screen recording](YOUR_GOOGLE_DRIVE_LINK_HERE)
+[▶️ Click here to watch the screen recording]([YOUR_GOOGLE_DRIVE_LINK_HERE](https://drive.google.com/file/d/17ldxHDS4F-fb7x4eGOJ9cp4wEpKvkC-w/view?usp=sharing))
 
