@@ -1,80 +1,86 @@
-To make your repository look professional for the **Skill Lab** recruitment team, your `README.md` should be clear, organized, and easy for another developer to follow.
+# Product Registration System 
 
-Since you have until the **8:30 PM deadline**, you can copy and paste the content below directly into your `README.md` file on GitHub or in your local project folder.
+A simple Laravel-based Product Management module developed for the **Skill Lab Intern Selection Process**.  
+The system supports basic **Create** and **Read** operations using a MySQL database.
 
 ---
 
-### README.md Content
-
-```markdown
-# Product Registration System - Kalpa Vidusha
-
-This is a simple Laravel-based Product Management module developed for the Skill Lab Intern Selection process. The system supports basic **Create** and **Read** operations using a MySQL database.
-
 ## 🚀 Features
-- **Product Inventory:** A clean, Bootstrap-powered table displaying all registered products.
-- **Product Registration:** A form to add new products with real-time validation feedback.
-- **Strict Validation:** - Names and Categories are restricted to alphabetic characters only (No numbers allowed).
-    - Price and Quantity are strictly numeric with minimum value requirements.
-- **Security:** Implements CSRF protection and Mass Assignment protection via Eloquent Models.
 
-## 🛠️ Technical Stack
-- **Framework:** Laravel 12
-- **Language:** PHP 8.2
-- **Database:** MySQL
-- **Frontend:** Bootstrap 5 (CDN)
+- **Product List** — A clean Bootstrap-powered table displaying all registered products
+- **Add Product** — A form to register new products with real-time validation feedback
+- **Strict Validation:**
+  - Names and Categories are restricted to alphabetic characters only (no numbers allowed)
+  - Price and Quantity are strictly numeric with minimum value requirements
+- **Security** — CSRF protection and Mass Assignment protection via Eloquent Models
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer      | Technology        |
+|------------|-------------------|
+| Framework  | Laravel 12        |
+| Language   | PHP 8.2           |
+| Database   | MySQL 8.0         |
+| Frontend   | HTML + Bootstrap (CDN) |
+
+---
 
 ## 📥 Setup Instructions
-To run this project on a fresh PC, follow these steps:
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/KalpaVidusha/Kalpa_store_LaravelBasic.git](https://github.com/KalpaVidusha/Kalpa_store_LaravelBasic.git)
-
+### 1. Clone the Repository
+```bash
+git clone https://github.com/KalpaVidusha/Kalpa_store_LaravelBasic.git
+cd Kalpa_store_LaravelBasic
 ```
 
-2. **Install Dependencies:**
+### 2. Install Dependencies
 ```bash
 composer install
-
 ```
 
-
-3. **Environment Setup:**
-* Copy `.env.example` to `.env`.
-* Generate the application key: `php artisan key:generate`.
-* Create a database named `kalpa_store` in your local MySQL server (XAMPP/PHPMyAdmin).
-
-
-4. **Database Configuration:**
-* Update your `.env` file with your database credentials:
+### 3. Environment Setup
+```bash
+cp .env.example .env
+php artisan key:generate
 ```
-DB_DATABASE=kalpa_store
+
+### 4. Create the Database
+
+Open **MySQL Workbench** and run:
+```sql
+CREATE DATABASE kalpa_store;
+```
+
+### 5. Configure `.env`
+
+Open the `.env` file and update the database section:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=product_store
 DB_USERNAME=root
 DB_PASSWORD=
-
 ```
+> Leave `DB_PASSWORD` empty if you have no MySQL root password set.
 
-
-
-
-5. **Run Migrations:**
+### 6. Run Migrations
 ```bash
 php artisan migrate
-
 ```
 
-
-6. **Start the Server:**
+### 7. Start the Server
 ```bash
 php artisan serve
-
 ```
 
+Visit → [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-Visit `http://127.0.0.1:8000` in your browser.
+---
 
 ## 📹 Demo Video
 
-[Click here to watch the screen recording of the system in action](https://www.google.com/search?q=YOUR_VIDEO_LINK_HERE)
+[▶️ Click here to watch the screen recording](YOUR_GOOGLE_DRIVE_LINK_HERE)
 
