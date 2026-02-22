@@ -50,7 +50,7 @@ php artisan key:generate
 
 Open **MySQL Workbench** and run:
 ```sql
-CREATE DATABASE kalpa_store;
+CREATE DATABASE product_store;
 ```
 
 ### 5. Configure `.env`
