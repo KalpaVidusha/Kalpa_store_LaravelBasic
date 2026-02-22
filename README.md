@@ -78,21 +78,3 @@ Visit `http://127.0.0.1:8000` in your browser.
 
 [Click here to watch the screen recording of the system in action](https://www.google.com/search?q=YOUR_VIDEO_LINK_HERE)
 
-```
-
----
-
-### Final Steps to Submit
-1. **Save this file** as `README.md` in your project folder.
-2. **Update GitHub** by running these commands in your terminal:
-   ```bash
-   git add README.md
-   git commit -m "Added professional README"
-   git push origin main
-
-```
-
-3. **Double-check the video link:** Ensure you replace `YOUR_VIDEO_LINK_HERE` with the actual link to your Google Drive or YouTube demo.
-4. **Submit the Form:** Fill out the [Skill Lab Submission Form](https://forms.gle/U6QDXPJvqBtXc13C7) with your GitHub and video links.
-
-**Would you like me to help you write a professional message to the recruitment team to let them know your submission is complete?**
